@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+$blue: #007bff;
+$light: #149ddd;
+$darker: #040D12;
+$dark: #183D3D;
+$grey: #5C8374;
+$lighter: #2c2f3f;
+$lighter-text:#8a8c98;
+$white: #eeeeee;
+
+
+$heading: Raleway, sans-serif;
+$sub-heading: Poppins;
+$small-text: Open Sans;
+
+body {
+  font-family: Arial, sans-serif, Open Sans;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

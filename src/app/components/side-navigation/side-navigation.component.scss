@@ -1,0 +1,100 @@
+@import "../../../styles.scss";
+
+.example-container {
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.example-sidenav-content {
+  .menu-btn {
+    float: right;
+    margin-top: 5px;
+  }
+}
+
+.example-sidenav {
+  background-color: $darker;
+  padding: 20px;
+  width: 20%;
+  .profile {
+    .image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100px;
+      border: 8px solid $lighter;
+      border-radius: 50%;
+    }
+    .sub-heading {
+      color: $white;
+      font-family: $heading;
+      font-size: 20px;
+      text-align: center;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: space-evenly;
+      .icons {
+        font-size: 15px;
+        background-color: $lighter;
+        padding: 11px;
+        border-radius: 50%;
+        color: $white;
+        transition: background-color 0.3s;
+        &:hover {
+          cursor: pointer;
+          background-color: $light;
+        }
+      }
+    }
+  }
+  .navigation-menu {
+    .all-menus {
+      .menu {
+        list-style: none;
+        color: $lighter-text;
+        padding: 15px 0px;
+        font-size: 17px;
+        font-family: $heading;
+        font-weight: 400;
+        margin-left: -7%;
+        span {
+          margin-right: 15%;
+          i {
+            font-size: 15px;
+            color: $white;
+          }
+          transition: color 0.3s;
+        }
+        &:hover {
+          cursor: pointer;
+          color: $white;
+          span {
+            i {
+              color: $light;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    .sub-heading {
+      font-family: $heading;
+      color: $lighter-text;
+      font-size: 13px;
+      text-align: center;
+      span {
+        color: $white;
+      }
+    }
+  }
+}

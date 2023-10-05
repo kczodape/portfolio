@@ -1,0 +1,39 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side"
+        [opened]="!isSmallScreen">
+        <div class="profile">
+            <img src="assets/dp.png" alt="My dp" class="image">
+            <h4 class="sub-heading">Krunal Zodape</h4>
+            <div class="social-icons">
+                <i class="icons fa-brands fa-linkedin-in"></i>
+                <i class="icons fa-brands fa-twitter"></i>
+                <i class="icons fa-brands fa-instagram"></i>
+                <i class="icons fa-brands fa-whatsapp"></i>
+                <i class="icons fa-brands fa-facebook-f"></i>
+            </div>
+        </div>
+        <div class="navigation-menu">
+            <ul class="all-menus">
+                <li class="menu"><span><i class="lni lni-home"></i></span>Home</li>
+                <li class="menu"><span><i class="lni lni-user"></i></span>About</li>
+                <li class="menu"><span><i class="lni lni-empty-file"></i></span>Resume</li>
+                <li class="menu"><span><i class="lni lni-book"></i></span>Portfolio</li>
+                <li class="menu"><span><i class="uil uil-server-alt"></i></span>Services</li>
+                <li class="menu"><span><i class="uil uil-envelope-alt"></i></span>Contact
+                    me</li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p class="sub-heading">&#169; <span>Copyright</span> kczodape </p>
+            <p class="sub-heading"><span>Developed by </span>Krunal Zodape</p>
+        </div>
+    </mat-drawer>
+
+    <div class="example-sidenav-content">
+        <button type="button" class="menu-btn" mat-button
+            (click)="drawer.toggle()" *ngIf="isSmallScreen">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <app-home></app-home>
+    </div>
+</mat-drawer-container>

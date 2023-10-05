@@ -1,0 +1,63 @@
+@import "../../../styles.scss";
+
+.home {
+  text-align: center;
+
+  .image-container {
+    position: relative;
+
+    img {
+      width: 100%;
+      filter: brightness(0.5);
+      transition: filter 0.3s;
+    }
+
+    .text-overlay {
+      position: absolute;
+      top: 35%;
+      left: 23%;
+      transform: translate(-50%, -50%);
+      color: $white;
+      padding: 10px;
+
+      h1,
+      p {
+        margin: 0;
+        font-family: $heading;
+      }
+      h1 {
+        font-size: 3rem;
+        letter-spacing: 4px;
+      }
+      p {
+        font-size: 1.2rem;
+        position: relative;
+        text-decoration: none;
+        letter-spacing: 4px;
+
+        #roleText::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -20px;
+          width: 100%;
+          border-bottom: 2px solid $blue;
+        }
+      }
+    }
+  }
+
+  .blinking-cursor {
+    animation: blink 1s infinite; // Blinking animation
+  }
+
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+}
