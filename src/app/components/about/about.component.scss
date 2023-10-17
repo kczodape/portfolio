@@ -179,6 +179,7 @@
     .lists-two {
       display: flex;
       justify-content: space-around;
+      flex-direction: column;
 
       ul {
         line-height: 3;
