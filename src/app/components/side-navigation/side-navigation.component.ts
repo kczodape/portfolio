@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef, HostListener } from '@angular/core';
+import { Component, ViewChild, HostListener } from '@angular/core';
 import { MatDrawer } from '@angular/material/sidenav';
 import { Router, ActivatedRoute } from '@angular/router';
 

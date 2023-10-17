@@ -10,65 +10,20 @@
         staying updated on front-end trends and agile methodologies.
     </p>
     <div class="main">
-        <div class="proexp">
+        <div class="proexp" *ngFor="let experience of jobExperiences">
             <p>
-                <span>Revature</span> <span>Chennai</span>
+                <span>{{ experience.company }}</span> <span>{{
+                    experience.location }}</span>
             </p>
-            <h3><span>Software Associate</span> <span>12/2022 - 03/2023</span></h3>
-            <p>
-                I received comprehensive training at Revature in front-end
-                technologies and tools, including HTML5, CSS3, SCSS, JavaScript,
-                TypeScript, Angular, Git, Azure,
-                GraphQL, Jasmine, and Karma, and a solid grasp of the Software
-                Development Life Cycle (SDLC). During training, I completed a
-                significant project, effectively
-                managing project versions using Git.
-            </p>
-            <h5>Project: RevNews - Web Application</h5>
+            <h3><span>{{ experience.title }}</span> <span>{{ experience.date }}</span></h3>
+            <p>{{ experience.description }}</p>
+            <h5>Project: {{ experience.project }}</h5>
             <ul>
-                <li>
-                    Developed a web app for personalized news access, allowing
-                    registration, login, news customization, article searches,
-                    and pinning for later access.
+                <li *ngFor="let responsibility of experience.responsibilities">
+                    {{ responsibility }}
                 </li>
                 <li>
-                    <span>Key Responsibilities: </span>Landing component,
-                    GraphQL registration and login, user profile management, and
-                    Git version control.
-                </li>
-                <li>
-                    <span>Technologies: </span>Angular 10, TypeScript, GraphQL,
-                    Agile-Scrum.
-                </li>
-            </ul>
-        </div>
-        <div class="proexp">
-            <p><span>Sybica</span> <span>Gujarat</span></p>
-            <h3><span>Frontend Developer Intern</span> <span>02/2022 - 08/2022</span></h3>
-            <p>SYBICA is a global company with expertise in digital
-                transformation using next-generation technologies.</p>
-            <ul>
-                <li>
-                    Collaborated with a team of developers to create a dynamic
-                    web application using React, resulting in a 30% improvement
-                    in website performance.
-                </li>
-                <li>
-                    Utilized HTML, CSS, SCSS, and JavaScript to build and style
-                    web pages, ensuring cross-browser compatibility and
-                    responsive design.
-                </li>
-                <li>
-                    Six-month project management on Git, including version
-                    control and code collaboration.
-                </li>
-                <li>
-                    Demonstrated strong problem-solving skills and effective
-                    communication while working on complex front-end features.
-                </li>
-                <li>
-                    Understand best practices and user experience for modern web
-                    development.
+                    <span>Technologies: {{experience.technologies}}</span>
                 </li>
             </ul>
         </div>

@@ -47,7 +47,6 @@
       }
       .data {
         p {
-          //   text-align: center;
           font-family: $sub-heading;
           &::before {
             position: relative;
@@ -151,11 +150,4 @@
       }
     }
   }
-}
-// X-Large devices (large desktops, 1200px and up)
-@media (max-width: 1200px) {
-}
-
-// XX-Large devices (larger desktops, 1400px and up)
-@media (max-width: 1400px) {
 }
