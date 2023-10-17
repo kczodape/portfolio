@@ -1,0 +1,152 @@
+@import "../../../styles.scss";
+
+.services {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: $white;
+  font-family: $small-text;
+  h2 {
+    font-family: $heading;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+    letter-spacing: 2px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 60px;
+      margin-top: 8px;
+      height: 3px;
+      background: $light;
+    }
+  }
+  p {
+    font-family: $small-text;
+    font-size: 15px;
+    padding-bottom: 15px;
+  }
+  .services-box {
+    display: flex;
+    flex-wrap: wrap;
+    .box {
+      width: 33%;
+      display: flex;
+      .left {
+        width: 30%;
+        margin-right: 15px;
+      }
+      .right {
+        h3 {
+          font-size: 130%;
+          font-weight: 500;
+          letter-spacing: 2px;
+          border-bottom: 3px solid $blue;
+          width: 72%;
+          padding-bottom: 4px;
+        }
+        p {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 315px) and (max-width: 576px) {
+  .services {
+    h2 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 13px;
+    }
+    .services-box {
+      .box {
+        width: 50%;
+        .left {
+          img {
+            width: 40px;
+          }
+        }
+        .right {
+          line-height: 1.2;
+          h3 {
+            font-size: 15px;
+            font-weight: 600;
+          }
+          p {
+            width: 95%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 576px) and (max-width: 768px) {
+  .services {
+    h2 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 13px;
+    }
+    .services-box {
+      .box {
+        width: 50%;
+        .left {
+          img {
+            width: 45px;
+          }
+        }
+        .right {
+          line-height: 1.2;
+          h3 {
+            font-size: 15px;
+            font-weight: 600;
+          }
+          p {
+            width: 95%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 769px) and (max-width: 992px) {
+  .services-box {
+    .box {
+      width: 50% !important;
+      .left {
+        img {
+          width: 45px;
+        }
+      }
+      .right {
+        line-height: 1.2;
+        h3 {
+          font-size: 15px;
+          font-weight: 600;
+        }
+        p {
+          width: 95%;
+        }
+      }
+    }
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (max-width: 1400px) {
+}

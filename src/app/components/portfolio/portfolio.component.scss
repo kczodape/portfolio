@@ -1,0 +1,161 @@
+@import "../../../styles.scss";
+
+.projects {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: $white;
+  h2 {
+    font-family: $heading;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+    letter-spacing: 2px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 60px;
+      margin-top: 8px;
+      height: 3px;
+      background: $light;
+    }
+  }
+  p {
+    font-family: $small-text;
+    font-size: 15px;
+    padding-bottom: 15px;
+  }
+  .videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .video {
+      transition: transform 0.7s;
+      &:hover {
+        transform: scale(1.1);
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      video {
+        width: 400px;
+      }
+      .links {
+        background-color: $light;
+        margin-top: -5px;
+        margin-bottom: 25px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        a {
+          color: white;
+          text-decoration: none;
+          font-size: 15px;
+          padding: 5px;
+          &:hover {
+            color: black;
+          }
+        }
+        div {
+          border: 1px solid black;
+          height: 28px;
+        }
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 315px) and (max-width: 576px) {
+  .projects {
+    h2 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 13px;
+    }
+    .videos {
+      .video {
+        video {
+          width: 225px;
+        }
+        .links {
+          margin-top: -10px;
+          margin-bottom: 15px;
+          padding: 5px;
+          a{
+            font-size: 13px;
+          }
+          div{
+            height: 25px;
+            margin-top: 2%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 576px) and (max-width: 768px) {
+  .projects{
+    h2{
+      font-size: 28px;
+    }
+    p{
+      font-size: 13px;
+    }
+    .videos {
+      .video {
+        video {
+          width: 240px;
+        }
+        .links {
+          margin-top: -10px;
+          margin-bottom: 15px;
+          padding: 5px;
+          a{
+            font-size: 13px;
+          }
+          div{
+            height: 25px;
+            margin-top: 2%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 752px) and (max-width: 992px) {
+  .projects{
+    .videos{
+      // justify-content: space-between !important;
+      video{
+        width: 324px !important;
+      }
+    }
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 993px) {
+  .projects{
+    .videos{
+      justify-content: space-evenly !important;
+      video{
+        width: 345px !important;
+      }
+    }
+  }
+}
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1300px) {
+  
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (max-width: 1400px) {
+}

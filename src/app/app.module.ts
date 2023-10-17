@@ -14,9 +14,11 @@ import { AboutComponent } from './components/about/about.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ServicesComponent } from './components/services/services.component';
-import { ContactComponent } from './components/contact/contact.component';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
+import { NgbCarouselModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FooterComponent } from './components/footer/footer.component';
 
-const module = [MatSidenavModule, MatIconModule, MatButtonModule]
+const module = [MatSidenavModule, MatIconModule, MatButtonModule, NgbCarouselModule ]
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,13 +28,15 @@ const module = [MatSidenavModule, MatIconModule, MatButtonModule]
     ResumeComponent,
     PortfolioComponent,
     ServicesComponent,
-    ContactComponent
+    TestimonialsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    module
+    module,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

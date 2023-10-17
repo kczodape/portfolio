@@ -2,30 +2,41 @@
     <mat-drawer #drawer class="example-sidenav" mode="side"
         [opened]="!isSmallScreen">
         <div class="profile">
-            <img src="assets/dp.png" alt="My dp" class="image">
+            <img src="assets/5.2.jpg" alt="My dp" class="image">
             <h4 class="sub-heading">Krunal Zodape</h4>
             <div class="social-icons">
-                <i class="icons fa-brands fa-linkedin-in"></i>
-                <i class="icons fa-brands fa-twitter"></i>
-                <i class="icons fa-brands fa-instagram"></i>
-                <i class="icons fa-brands fa-whatsapp"></i>
-                <i class="icons fa-brands fa-facebook-f"></i>
+                <a href="https://www.linkedin.com/in/krunal-zodape" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="icons fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="https://twitter.com/krunal_zodape" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="icons fa-brands fa-twitter"></i>
+                </a>
+
+                <a
+                    href="https://instagram.com/krunal_zodape?igshid=YTQwZjQ0NmI0OA=="
+                    target="_blank" rel="noopener noreferrer">
+                    <i class="icons fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://wa.link/v5n3y1" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="icons fa-brands fa-whatsapp"></i>
+                </a>
+
             </div>
         </div>
         <div class="navigation-menu">
             <ul class="all-menus">
-                <li class="menu"><span><i class="lni lni-home"></i></span>Home</li>
-                <li class="menu"><span><i class="lni lni-user"></i></span>About</li>
-                <li class="menu"><span><i class="lni lni-empty-file"></i></span>Resume</li>
-                <li class="menu"><span><i class="lni lni-book"></i></span>Portfolio</li>
-                <li class="menu"><span><i class="uil uil-server-alt"></i></span>Services</li>
-                <li class="menu"><span><i class="uil uil-envelope-alt"></i></span>Contact
-                    me</li>
+                <li class="menu" (click)="toHome()" routerLink="/home"><span><i class="lni lni-home"></i></span>Home</li>
+                <li class="menu" (click)="toAbout()" routerLinkActive="active"><span><i class="lni lni-user"></i></span>About</li>
+                <li class="menu" (click)="toResume()" routerLinkActive="active"><span><i class="lni lni-empty-file"></i></span>Experience</li>
+                <li class="menu" (click)="toPortfolio()" routerLinkActive="active"><span><i class="lni lni-book"></i></span>Projects</li>
+                <li class="menu" (click)="toServices()" routerLinkActive="active"><span><i class="uil uil-server-alt"></i></span>Services</li>
+                <li class="menu" (click)="toTestimonials()" routerLinkActive="active"><span><i class="uil uil-server-alt"></i></span>Testimonials</li>
             </ul>
-        </div>
-        <div class="footer">
-            <p class="sub-heading">&#169; <span>Copyright</span> kczodape </p>
-            <p class="sub-heading"><span>Developed by </span>Krunal Zodape</p>
         </div>
     </mat-drawer>
 
@@ -34,6 +45,12 @@
             (click)="drawer.toggle()" *ngIf="isSmallScreen">
             <mat-icon>menu</mat-icon>
         </button>
-        <app-home></app-home>
+        <div id="home"><app-home></app-home></div>
+        <div id="about"><app-about></app-about></div>
+        <div id="resume"><app-resume></app-resume></div>
+        <div id="portfolio"><app-portfolio></app-portfolio></div>
+        <div id="services"><app-services></app-services></div>
+        <div id="testimonials"><app-testimonials></app-testimonials></div>
+        <app-footer></app-footer>
     </div>
 </mat-drawer-container>

@@ -1,0 +1,14 @@
+<div class="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonials-box">
+        <div class="testimonial" *ngFor="let testimonial of testimonials;">
+            <div class="image">
+                <img [src]="testimonial.src" alt>
+            </div>
+            <h5>{{testimonial.name}}</h5>
+            <div class="data">
+                <p>{{testimonial.data}}</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -5,12 +5,12 @@ $dark: #183D3D;
 $grey: #5C8374;
 $lighter: #2c2f3f;
 $lighter-text:#8a8c98;
-$white: #eeeeee;
+$white: white;
 
 
-$heading: Raleway, sans-serif;
-$sub-heading: Poppins;
-$small-text: Open Sans;
+$heading: 'Raleway', sans-serif;
+$sub-heading:'Poppins', sans-serif;;
+$small-text: Open, sans-serif;
 
 body {
   font-family: Arial, sans-serif, Open Sans;
@@ -18,3 +18,6 @@ body {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';

@@ -1,0 +1,360 @@
+@import "../../../styles.scss";
+
+.about {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: $white;
+  h2 {
+    font-family: $heading;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+    letter-spacing: 2px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: $light;
+    }
+  }
+
+  .introdunction {
+    p {
+      font-family: $small-text;
+      font-size: 15px;
+      padding-bottom: 15px;
+    }
+  }
+
+  .profile {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+
+    .image {
+      width: 48%;
+
+      img {
+        height: 30vw;
+      }
+    }
+
+    .data {
+      width: 48%;
+
+      h3 {
+        font-weight: 700;
+        font-size: 26px;
+        color: #173b6c;
+        font-family: $sub-heading;
+      }
+
+      p {
+        font-family: $small-text;
+      }
+      .lists-one {
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+          line-height: 3;
+          list-style: none;
+          margin-left: -20px;
+
+          li {
+            position: relative;
+            padding-bottom: 10px;
+            font-size: 17px;
+
+            span {
+              font-weight: 500;
+            }
+
+            a {
+              text-decoration: none;
+            }
+
+            &::before {
+              content: "";
+              position: absolute;
+              border-right: 2px solid black;
+              border-bottom: 2px solid black;
+              width: 10px;
+              height: 10px;
+              top: calc(50% - 4px);
+              left: -20px;
+              transform: translateY(-50%) rotate(-45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+  .list-two {
+    display: none;
+  }
+
+  .summary {
+    padding-top: 20px;
+    p {
+      font-family: $small-text;
+      font-size: 15px;
+      padding-bottom: 15px;
+    }
+  }
+
+  .skills {
+    p {
+      font-family: $small-text;
+    }
+    .lists {
+      display: flex;
+      ul {
+        list-style: none;
+        width: 33.33%;
+        padding-left: 0;
+        margin: 15px 30px;
+        li {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 15px;
+          label {
+            display: flex;
+            justify-content: space-between;
+            .percent {
+              font-weight: 500;
+            }
+          }
+          progress {
+            width: 100%;
+            height: 15px;
+            background: $white;
+            &::-webkit-progress-bar {
+              background: $lighter-text;
+            }
+
+            &::-webkit-progress-value {
+              background: $blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 315px) and (max-width: 576px) {
+  .about {
+    h2 {
+      font-size: 25px;
+    }
+    .introdunction {
+      p {
+        font-size: 13px;
+      }
+    }
+    .profile {
+      justify-content: space-between;
+      .image {
+        img {
+        }
+      }
+      .data {
+        h3 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 13px;
+        }
+        .lists-one {
+          display: none;
+        }
+      }
+    }
+    .lists-two {
+      display: flex;
+      justify-content: space-around;
+
+      ul {
+        line-height: 3;
+        list-style: none;
+        margin-left: -20px;
+
+        li {
+          position: relative;
+          padding-bottom: 10px;
+          font-size: 13px;
+
+          span {
+            font-weight: 500;
+          }
+
+          a {
+            text-decoration: none;
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            width: 7px;
+            height: 7px;
+            top: calc(50% - 4px);
+            left: -20px;
+            transform: translateY(-50%) rotate(-45deg);
+          }
+        }
+      }
+    }
+    .summary {
+      p {
+        font-size: 13px;
+      }
+    }
+    .skills {
+      p {
+        font-size: 13px;
+      }
+      .lists {
+        ul {
+          width: 25%;
+          margin: 5px 15px;
+          li {
+            label {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 576px) and (max-width: 768px) {
+  .about {
+    h2 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 13px !important;
+    }
+  }
+  .profile {
+    .image {
+      width: 50% !important;
+    }
+    .data {
+      width: 50% !important;
+      h3 {
+        font-size: 24px;
+      }
+      .lists-one {
+        display: none !important;
+      }
+    }
+  }
+  .lists-two {
+    display: flex;
+    justify-content: space-around;
+
+    ul {
+      line-height: 3;
+      list-style: none;
+      margin-left: -20px;
+
+      li {
+        position: relative;
+        padding-bottom: 10px;
+        font-size: 13px;
+
+        span {
+          font-weight: 500;
+        }
+
+        a {
+          text-decoration: none;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          border-right: 2px solid black;
+          border-bottom: 2px solid black;
+          width: 7px;
+          height: 7px;
+          top: calc(50% - 4px);
+          left: -20px;
+          transform: translateY(-50%) rotate(-45deg);
+        }
+      }
+    }
+  }
+  .skills {
+    .lists {
+      ul {
+        li {
+          span {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 769 - 960
+@media (min-width: 769px) and (max-width: 1192px) {
+  .lists-one {
+    display: none !important;
+  }
+  .lists-two {
+    display: flex;
+    justify-content: space-around;
+
+    ul {
+      line-height: 3;
+      list-style: none;
+      margin-left: -20px;
+
+      li {
+        position: relative;
+        padding-bottom: 10px;
+        font-size: 13px;
+
+        span {
+          font-weight: 500;
+        }
+
+        a {
+          text-decoration: none;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          border-right: 2px solid black;
+          border-bottom: 2px solid black;
+          width: 7px;
+          height: 7px;
+          top: calc(50% - 4px);
+          left: -20px;
+          transform: translateY(-50%) rotate(-45deg);
+        }
+      }
+    }
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1193px) {
+  .lists-two {
+    display: none;
+  }
+}

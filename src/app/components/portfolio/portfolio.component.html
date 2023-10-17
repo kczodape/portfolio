@@ -1,1 +1,27 @@
-<p>portfolio works!</p>
+<div class="projects">
+    <h2>Projects</h2>
+    <p>
+        Take a look at some of the projects I've had the privilege to work on.
+        Each project represents a unique challenge and an opportunity for
+        creative problem-solving.
+    </p>
+    <div class="videos">
+        <div class="video"
+            *ngFor="let myVideo of videos; let i = index">
+            <video
+                #video
+                preload="metadata"
+                (mouseover)="playVideo(video)"
+                (mouseout)="pauseVideo(video)"
+                controls>
+                <source [src]="myVideo.videoSource" type="video/mp4">
+            </video>
+            <div class="links">
+                <a [href]="myVideo.videoLink" target="_blank">View video</a>
+                <div></div>
+                <a [href]="myVideo.sourceCodeLink" target="_blank">Source code</a>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,167 @@
+@import "../../../styles.scss";
+
+.experence {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: $lighter;
+  color: $white;
+  font-weight: 100;
+  h2 {
+    font-family: $heading;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    color: $white;
+    letter-spacing: 2px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 60px;
+      margin-top: 8px;
+      height: 3px;
+      background: $light;
+    }
+  }
+  p {
+    font-family: $small-text;
+    font-size: 13px;
+    padding-bottom: 15px;
+    font-weight: 100;
+  }
+  .main {
+    display: flex;
+    justify-content: space-between;
+    .proexp {
+      position: relative;
+      padding-left: 16px;
+      border-left: 2px solid $blue;
+      width: 47%;
+      p {
+        font-family: $small-text;
+        font-size: 15px;
+        padding-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+      }
+      h3 {
+        display: flex;
+        justify-content: space-between;
+        font-family: $sub-heading;
+      }
+      p {
+        font-family: $small-text;
+        font-size: 13px;
+        font-style: italic;
+        padding-bottom: 15px;
+      }
+      h5 {
+        font-size: 15px;
+        font-weight: 500;
+      }
+      ul {
+        li {
+          position: relative;
+          list-style: none;
+          &::before {
+            content: "";
+            position: absolute;
+            border-right: 2px solid $white;
+            border-bottom: 2px solid $white;
+            width: 5px;
+            height: 5px;
+            top: calc(50% - 4px);
+            left: -20px;
+            transform: translateY(-50%) rotate(-45deg);
+          }
+        }
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50px;
+        left: -9px;
+        top: 0;
+        background: #fff;
+        border: 2px solid #1f5297;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 315px) and (max-width: 576px) {
+  .experence {
+    h2 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 13px;
+    }
+    .main {
+      flex-direction: column;
+      .proexp {
+        width: 98%;
+        margin-bottom: 5%;
+        p {
+          padding-bottom: 0px;
+        }
+        h3 {
+          font-size: 20px;
+        }
+        ul {
+          li {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 576px) and (max-width: 768px) {
+  .experence {
+    h2 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 13px;
+    }
+    .main {
+      flex-direction: column;
+      .proexp {
+        width: 95%;
+        p {
+          padding-bottom: 0px;
+        }
+        h3 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 769px) and (max-width: 992px) {
+  .experence {
+    .main {
+      flex-direction: column;
+      .proexp {
+        width: 95%;
+      }
+    }
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (max-width: 1400px) {
+}

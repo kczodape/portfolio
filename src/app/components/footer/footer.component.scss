@@ -1,0 +1,41 @@
+@import "../../../styles.scss";
+
+.footer {
+  background-color: $darker;
+  p {
+    margin-bottom: 0;
+    padding: 13px;
+    color: white;
+    text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    font-family: $sub-heading;
+  }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 315px) and (max-width: 576px) {
+ .footer{
+  p{
+    font-size: 11px;
+  }
+ }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (max-width: 1400px) {
+}
+

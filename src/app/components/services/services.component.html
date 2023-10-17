@@ -1,1 +1,18 @@
-<p>services works!</p>
+<div class="services">
+    <h2>Services</h2>
+    <p>I'm a passionate developer dedicated to creating exceptional digital
+        solutions. From static websites to dynamic apps, I'm here to turn your
+        ideas into outstanding online experiences.
+    </p>
+    <div class="services-box">
+        <div class="box" *ngFor="let service of services; let i = index">
+            <div class="left">
+                <img [src]="service.gif" alt="gif">
+            </div>
+            <div class="right">
+                <h3>{{service.head}}</h3>
+                <p>{{service.para}}</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,1 +1,102 @@
-<p>about works!</p>
+<div class="about">
+    <h2>About</h2>
+    <div class="introdunction">
+        <p>
+            An avid book enthusiast, I find solace in the pages of captivating
+            stories and insightful narratives. Recently, 'No Limit' has been a
+            literary journey that truly resonated with me, igniting my passion
+            for limitless possibilities. My love for website and mobile app
+            development is akin to crafting digital narratives, where every line
+            of code shapes user experiences. As I travel through the
+            ever-evolving landscape of technology, I embark on adventures that
+            expand my horizons and inspire innovation.
+        </p>
+    </div>
+    <div class="profile">
+        <div class="image">
+            <img src="assets/6.2.jpg" alt="side photo">
+        </div>
+        <div class="data">
+            <h3>MEAN & Mobile App Developer.</h3>
+            <p>In my free time, I enjoy staying up-to-date with the latest
+                developments in web technologies and design
+                trends. I'm always eager to learn and grow in my field.
+            </p>
+            <div class="lists-one">
+                <ul>
+                    <li><span>Birthday: </span>01 April 2001</li>
+                    <li><span>Git: </span><a href="https://github.com/kczodape" target="_blank">Krunal Zodape</a></li>
+                    <li><span>City: </span>Nagpur, Maharashtra, India</li>
+                    <li><span>Phone: </span>+91 8530278729</li>
+                </ul>
+                <ul>
+                    <li><span>Degree: </span>B.Tech</li>
+                    <li><span>Linkedin: </span><a href="www.linkedin.com/in/krunal-zodape " target="_blank">Krunal Zodape</a></li>
+                    <li><span>Email: </span>krunalzodape9@gmail.com</li>
+                    <li><span>Freelance: </span>Available</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="lists-two">
+        <ul>
+            <li><span>Birthday: </span>01 April 2001</li>
+            <li><span>Git: </span><a href="https://github.com/kczodape" target="_blank">Krunal Zodape</a></li>
+            <li><span>City: </span>Nagpur, Maharashtra, India</li>
+            <li><span>Phone: </span>+91 8530278729</li>
+        </ul>
+        <ul>
+            <li><span>Degree: </span>B.Tech</li>
+            <li><span>Linkedin: </span><a href="www.linkedin.com/in/krunal-zodape " target="_blank">Krunal Zodape</a></li>
+            <li><span>Email: </span>krunalzodape9@gmail.com</li>
+            <li><span>Freelance: </span>Available</li>
+        </ul>
+    </div>
+    <div class="summary">
+        <p>I'm a passionate and dedicated professional who loves taking on
+            challenges. I'm enthusiastic about creating
+            user-friendly web applications and contributing to meaningful
+            projects. I'm known for my attention to detail
+            and my commitment to delivering high-quality work. I take pride in
+            creating user interfaces that are not only functional but also
+            visually appealing, using HTML5, SCSS, and
+            JavaScript to craft engaging experiences.
+        </p>
+    </div>
+    <h2>Skills</h2>
+    <div class="skills">
+        <p>As a web developer, I've gained expertise in various technologies and
+            tools. Here's a snapshot of my proficiency in key areas:
+        </p>
+        <div class="lists">
+            <ul>
+              <li *ngFor="let item of group1">
+                <label for="progress">
+                  <span>{{ item.label }}</span>
+                  <span class="percent">{{ item.value }}%</span>
+                </label>
+                <progress [value]="item.value" max="100" class="progress-bar"></progress>
+              </li>
+            </ul>
+            <ul>
+              <li *ngFor="let item of group2">
+                <label for="progress">
+                  <span>{{ item.label }}</span>
+                  <span class="percent">{{ item.value }}%</span>
+                </label>
+                <progress [value]="item.value" max="100" class="progress-bar"></progress>
+              </li>
+            </ul>
+            <ul>
+              <li *ngFor="let item of group3">
+                <label for="progress">
+                  <span>{{ item.label }}</span>
+                  <span class="percent">{{ item.value }}%</span>
+                </label>
+                <progress [value]="item.value" max="100" class="progress-bar"></progress>
+              </li>
+            </ul>
+          </div>
+          
+    </div>
+</div>

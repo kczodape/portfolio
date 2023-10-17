@@ -5,6 +5,7 @@
 
   .image-container {
     position: relative;
+    background-color: $darker;
 
     img {
       width: 100%;
@@ -28,6 +29,7 @@
       h1 {
         font-size: 3rem;
         letter-spacing: 4px;
+        padding-bottom: 20px;
       }
       p {
         font-size: 1.2rem;
@@ -61,3 +63,69 @@
     }
   }
 }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 315px) and (max-width: 576px) {
+  .home {
+    .image-container {
+      .text-overlay {
+        top: 50%;
+        left: 30%;
+        line-height: 0px;
+        h1 {
+          font-size: 1.8rem;
+          letter-spacing: 1px;
+        }
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 576px) and (max-width: 768px) {
+  .image-container {
+    .text-overlay {
+      top: 50% !important;
+      left: 32% !important;
+      line-height: 0px;
+      h1 {
+        font-size: 2.4rem !important;
+        letter-spacing: 1px !important;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 769px) and (max-width: 992px) {
+  .home{
+    .image-container{
+      .text-overlay{
+        top: 50%;
+        left: 30%;
+        h1{
+          font-size: 2.8rem;
+        }
+      }
+    }
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width:993px) and (max-width: 1200px) {
+  .home{
+    .image-container{
+      .text-overlay{
+        top: 40%;
+        left: 28%;
+      }
+    }
+  }
+}
+
