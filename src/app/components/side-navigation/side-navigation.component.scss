@@ -130,6 +130,9 @@
         font-size: 15px;
       }
       .social-icons {
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
         i {
           font-size: 10px;
         }
@@ -139,7 +142,7 @@
       .all-menus {
         .menu {
           padding: 8px 0;
-          font-size: 15px;
+          font-size: 9px;
         }
       }
     }
